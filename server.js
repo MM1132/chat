@@ -2,8 +2,7 @@ const path = require('path')
 const http = require('http')
 const express = require('express')
 const socketio = require('socket.io')
-const dateAndTime = require('date-and-time')
-const sqlite3 = require('sqlite3')//.verbose()
+const sqlite3 = require('sqlite3')
 
 /* db.run(`
 CREATE TABLE IF NOT EXISTS messages
