@@ -21,7 +21,7 @@ chatForm.addEventListener('submit', e => {
 })
 
 const chatMessages = document.querySelector('.chat-messages')
-socket.on('message', message => {
+socket.on('message', data => {
     // Message container
     let msgElement = document.createElement('div')
     msgElement.classList.add('message-container')
@@ -29,7 +29,7 @@ socket.on('message', message => {
     // Date
     let dateElement = document.createElement('div')
     dateElement.classList.add('message-date')
-    dateElement.textContent = 'Today'
+    dateElement.textContent = data.date
     msgElement.appendChild(dateElement)
 
     // Author
@@ -41,8 +41,12 @@ socket.on('message', message => {
     // Text
     let textElement = document.createElement('div')
     textElement.classList.add('message-text')
-    textElement.textContent = message
+    textElement.textContent = data.message
     msgElement.appendChild(textElement)
 
     chatMessages.appendChild(msgElement)
+
+    // And scroll to the very bottom
+    const chatMain = document.querySelector('.chat-main')
+    chatMain.scrollTo(0, chatMain.scrollHeight)
 })

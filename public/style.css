@@ -58,22 +58,30 @@ html, body, h1 {
 }
 
 /* MESSAGES */
+.chat-messages {
+    display: table;
+}
+
 .message-container {
     color: #e0e0e0;
     margin: 10px;
+    display: table-row;
 }
 
 .message-container > * {
+    padding: 10px;
     display: inline;
-    margin: 0 8px;
+    display: table-cell;
 }
 
 .message-date {
     color: #6d6d6d;
     font-size: 14px;
+    display: table-cell;
 }
 
 .message-author {
     font-weight: bold;
     font-size: 16px;
+    display: table-cell;
 }
