@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "A simple websocket chat app. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MM1132/chat.git"
+  },
+  "keywords": [],
+  "author": "Robert Reimann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MM1132/chat/issues"
+  },
+  "homepage": "https://github.com/MM1132/chat#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "http": "0.0.1-security",
+    "socket.io": "^4.4.1",
+    "ws": "^8.5.0"
+  }
+}

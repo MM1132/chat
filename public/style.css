@@ -1,0 +1,79 @@
+/* FONT DEFINITIONS */
+@font-face {
+    font-family: 'Whitney Book';
+    src: url('/font/whitneybook.otf');
+}
+
+* {
+    font-family: "Whitney Book";
+}
+
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    background-color: #151515;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    text-align: center;
+    color: #c9c9c9;
+    font-size: 32px;
+    background-color: #222222;
+    letter-spacing: 30px;
+    border-bottom: black 1px solid;
+}
+
+.chat-main {
+    height: 100%;
+    overflow-x: auto;
+}
+
+.chat-form-container {
+    background-color: #232323;
+    border-top: #363636 1px solid;
+}
+
+#chat-form {
+    display: flex;
+}
+
+#msg {
+    flex-grow: 1;
+    resize: none;
+    background-color: #dedede;
+    border-radius: 25px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* MESSAGES */
+.message-container {
+    color: #e0e0e0;
+    margin: 10px;
+}
+
+.message-container > * {
+    display: inline;
+    margin: 0 8px;
+}
+
+.message-date {
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.message-author {
+    font-weight: bold;
+    font-size: 16px;
+}
