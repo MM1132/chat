@@ -17,9 +17,9 @@ html, body, h1 {
     background-color: #151515;
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .chat-header {
@@ -59,29 +59,32 @@ html, body, h1 {
 
 /* MESSAGES */
 .chat-messages {
-    display: table;
 }
 
 .message-container {
     color: #e0e0e0;
-    margin: 10px;
-    display: table-row;
+    text-indent: 0px;
 }
 
 .message-container > * {
-    padding: 10px;
+    margin: 6px;
     display: inline;
-    display: table-cell;
+}
+
+.date-author-container > * {
+    margin: 6px;
 }
 
 .message-date {
     color: #6d6d6d;
     font-size: 14px;
-    display: table-cell;
+    display: inline-block;
+    width: 60px;
+    text-align: right;
 }
 
 .message-author {
     font-weight: bold;
     font-size: 16px;
-    display: table-cell;
+    display: inline;
 }

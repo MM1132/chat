@@ -20,8 +20,8 @@
   "homepage": "https://github.com/MM1132/chat#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "http": "0.0.1-security",
+    "http": "^0.0.1-security",
     "socket.io": "^4.4.1",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^4.1.1"
   }
 }

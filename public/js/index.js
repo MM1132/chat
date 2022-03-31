@@ -25,18 +25,23 @@ socket.on('message', data => {
     // Message container
     let msgElement = document.createElement('div')
     msgElement.classList.add('message-container')
+
+    // Date and Author container
+    let dateAuthorContainer = document.createElement('div')
+    dateAuthorContainer.classList.add('date-author-container')
+    msgElement.appendChild(dateAuthorContainer)
     
     // Date
     let dateElement = document.createElement('div')
     dateElement.classList.add('message-date')
-    dateElement.textContent = data.date
-    msgElement.appendChild(dateElement)
+    dateElement.textContent = data.date.split(' ')[1]
+    dateAuthorContainer.appendChild(dateElement)
 
     // Author
     let authorElement = document.createElement('div')
     authorElement.classList.add('message-author')
     authorElement.textContent = 'Stranger'
-    msgElement.appendChild(authorElement)
+    dateAuthorContainer.appendChild(authorElement)
 
     // Text
     let textElement = document.createElement('div')
